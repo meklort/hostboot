@@ -1909,11 +1909,11 @@ class readerTraits < fields<DDR4, BASE_CNFG>::DRAM_MFR_ID_CODE_MSB, R >
 {
     public:
 
-        static constexpr size_t COMPARISON_VAL = 0x00;
+        static constexpr size_t COMPARISON_VAL = 0xFF;
         static constexpr const char* FIELD_STR = "DRAM manufacturer ID code, MSB";
 
         template <typename T>
-        using COMPARISON_OP = std::not_equal_to<T>;
+        using COMPARISON_OP = std::less_equal<T>;
 };
 
 ///

@@ -119,6 +119,8 @@ static const std::vector <std::pair<uint8_t, uint8_t> > DRAM_STACK_TYPE_MAP =
 //Note, the first entries of the pairs need to be in sorted order!!
 static const std::vector <std::pair<uint16_t, uint8_t> > DRAM_MFGID_MAP =
 {
+    //Unknown
+    {0x0000, 0b010},
     //Kingston
     {0x0198, 0b011},
     //A-data
